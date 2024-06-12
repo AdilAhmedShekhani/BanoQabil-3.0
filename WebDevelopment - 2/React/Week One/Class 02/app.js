@@ -144,3 +144,25 @@ var copyArr = students.slice(1, 2); // target index and after this copy all
 
 console.log(copyArr);
 console.log(students);
+
+// Create Function
+
+// Normal Function
+
+// function abc() {
+//   var abc = "name";
+//   console.log("abc==>", abc);
+// }
+
+// abc() // Function Call
+
+// Create Function
+
+// Arrow Function (ES-6)
+
+// const abc = () => {
+//   var abc = "name";
+//   console.log("abc==>", abc);
+// };
+
+// abc(); // Function Call
