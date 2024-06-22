@@ -1,8 +1,37 @@
+### Lets get start with setup
+
+- Install Yarn
+
+```bash
+npm install --global yarn
+```
+
 ### Create React with Vite
 
+Guide by Vite:
+https://vitejs.dev/guide/
 
+```bash
+yarn create vite my-app --template react
+```
 
+You can replace `my-app` with your project name
 
+Now run:
+
+```bash
+  cd my-app
+```
+
+```bash
+  yarn
+```
+
+```bash
+  yarn dev
+```
+
+Open your project in your favorite code editor and start coding.
 
 #### Why Vite?
 
