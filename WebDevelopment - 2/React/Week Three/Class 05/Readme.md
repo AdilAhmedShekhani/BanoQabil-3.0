@@ -1,74 +1,35 @@
-### Lets get start with setup
+### What are Promises in JS:
 
-- Install Yarn
+To manage asynchronous actions in JavaScript, promises are used. It is an assurance that something will be done. The promise is used to keep track of whether the asynchronous event has been executed or not and determines what happens after the event has occurred.
 
-```bash
-npm install --global yarn
-```
+### A Promise has four states:
 
-### Create React with Vite
+- fulfilled: Action related to the promise succeeded
+- rejected: Action related to the promise failed
+- pending: Promise is still pending i.e. not fulfilled or rejected yet
+- settled: Promise has fulfilled or rejected
 
-Guide by Vite:
-https://vitejs.dev/guide/
+### Parameters::
 
-```bash
-yarn create vite my-app --template react
-```
+- Promise constructor takes only one argument which is a callback function (and that callback function is also referred as an anonymous function too).
+- Callback function takes two arguments, resolve and reject
+- Perform operations inside the callback function and if everything went well then call resolve.
+- If desired operations do not go well then call reject.
 
-You can replace `my-app` with your project name
+#### Benefits of Promises:
 
-Now run:
+- Improves Code Readability
+- Better handling of asynchronous operations
+- Better flow of control definition in asynchronous logic
+- Better Error Handling
 
-```bash
-  cd my-app
-```
+### What is Callback in JS
 
-```bash
-  yarn
-```
+Callbacks are a great approach to dealing with something once another task has been finished. Here, “something” refers to the execution of a function. Callbacks can be utilized if we wish to run a function immediately following the return of another function.
 
-```bash
-  yarn dev
-```
+The type of JavaScript function is objects. They may therefore be supplied as an argument to any other function when calling them, just like any other objects (Strings, Arrays, etc.).
 
-Open your project in your favorite code editor and start coding.
+### The benefit of Callback:
 
-#### Why Vite?
-
-Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects. It consists of two major parts:
-
-1. A dev server that serves your source files over native ES modules, with rich built-in features and astonishingly fast Hot Module Replacement (HMR).
-2. A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.
-
-### React Project Structure
-
-- node_modules
-  packages installed by yarn or npm
-- public
-  static files
-- src
-  - assets
-  - components
-  - App.js
-  - index.js
-- .gitignore
-- index.html
-  index.html is the entry point of your app and it is the only HTML file you need to create.
-- package.json
-  package.json is the manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). It also includes the list of dependencies to install from yarn when running yarn install.
-- README.md
-- yarn.lock
-  yarn.lock is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. This ensures that all people using your project will get the same set of dependencies.
-- vite.config.js
-  vite.config.js is the config file for Vite. It is optional and you can delete it if you don’t need it.
-
-  ### React Components
-
-Components are the building blocks of any React app and a typical React app will have many of these. Simply put, a component is a JavaScript class or function that optionally accepts inputs i.e. properties(props) and returns a React element that describes how a section of the UI (User Interface) should appear.
-
-#### Types of Components
-
-There are two types of components in React:
-
-1. Class Components ( Old way of writing components )
-2. Functional Components ( New way of writing components )
+- You can run another function call after waiting for the outcome of a prior function call.
+- You can call the parent function from the child function and can also pass data from child to parent.
