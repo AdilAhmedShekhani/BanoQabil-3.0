@@ -27,11 +27,16 @@ const Button = () => <button>Click Me</button>
 
 function App() {
   let fullName = "Adil Ahmed"
+const abc = () => {
+  console.log("Hello Students")
+}
+
   return (
     <>
       <Header />
       {/* {alert("Hello")} */}
-      <Button/>
+      {/* <Button/> */}
+<button onClick={abc}>Click</button>
       <h1>{fullName}</h1>
       <h1 style={{ color: "blue", backgroundColor: "#000", padding: 30 }}>
         Hello Students{" "}
