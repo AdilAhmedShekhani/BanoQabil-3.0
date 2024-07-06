@@ -31,7 +31,8 @@ const abc = () => {
   console.log("Hello Students")
 }
 
-const obj = {name: "Adil Ahmed Shekhani"}
+// const obj = {name: "Adil Ahmed Shekhani"}
+const obj = {name: ""}
   return (
     <>
       <Header />
