@@ -33,12 +33,16 @@ const abc = () => {
 
 // const obj = {name: "Adil Ahmed Shekhani"}
 const obj = {name: ""}
+const loader = true
   return (
     <>
+    {loader ? <h1>Loading ...</h1>:<h1>Website</h1>}
       <Header />
       {obj.name}
       <h1>{obj.name || "Not Available"}</h1>
       <h1>{obj.name ? obj.name : "Not Available"}</h1>
+
+      
       {/* {alert("Hello")} */}
       {/* <Button/> */}
 <button onClick={abc}>Click</button>
