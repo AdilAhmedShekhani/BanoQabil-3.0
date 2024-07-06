@@ -31,9 +31,11 @@ const abc = () => {
   console.log("Hello Students")
 }
 
+const obj = {name: "Adil Ahmed Shekhani"}
   return (
     <>
       <Header />
+      {obj.name}
       {/* {alert("Hello")} */}
       {/* <Button/> */}
 <button onClick={abc}>Click</button>
