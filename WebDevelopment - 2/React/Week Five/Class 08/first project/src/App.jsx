@@ -3,21 +3,24 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import CAR from "./assets/car.jpg";
 import "./App.css";
+import Header from "./Components/header";
+import Footer from "./Components/footer";
 
-function Header() {
-  return (
-    <div>
-      <h1>Header</h1>
-    </div>
-  );
-}
-function Footer() {
-  return (
-    <div>
-      <h1>Footer</h1>
-    </div>
-  );
-}
+// function Header() {
+//   return (
+//     <div>
+//       <h1>Header</h1>
+//     </div>
+//   );
+// }
+
+// function Footer() {
+//   return (
+//     <div>
+//       <h1>Footer</h1>
+//     </div>
+//   );
+// }
 
 function App() {
   return (
