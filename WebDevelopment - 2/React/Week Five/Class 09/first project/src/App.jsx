@@ -6,6 +6,9 @@ import "./App.css";
 import Header from "./Components/header";
 import Footer from "./Components/footer";
 
+
+const Button = () => <button>Click Me</button>
+
 // function Header() {
 //   return (
 //     <div>
@@ -27,6 +30,7 @@ function App() {
     <>
       <Header />
       {/* {alert("Hello")} */}
+      <Button/>
       <h1 style={{ color: "blue", backgroundColor: "#000", padding: 30 }}>
         Hello Students{" "}
       </h1>
