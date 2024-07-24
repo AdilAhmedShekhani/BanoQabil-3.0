@@ -1,3 +1,10 @@
+//Using React Icons
+
+//First Install (npm install react-icons in CMD)
+
+// import { FcAbout } from "react-icons/fc";
+// import { FaAllergies } from "react-icons/fa";
+
 function App() {
   //Maping of Array (List Rendering)
   // const arr = ["One", "Two", "Three"];
@@ -27,6 +34,11 @@ function App() {
 
       {/* <h1>{obj.name || "Not Available"}</h1> */}
       {/* {loader ? <h1>Loading</h1> : <h1>Welcome</h1>} */}
+
+      {/* <div>
+        <FcAbout />
+        <FaAllergies />
+      </div> */}
     </>
   );
 }
