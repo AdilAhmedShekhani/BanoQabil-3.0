@@ -5,6 +5,10 @@
 // import { FcAbout } from "react-icons/fc";
 // import { FaAllergies } from "react-icons/fa";
 
+// import { SCHOOL_NAME, STUDENT } from "./utils/constants";
+
+// import * as constants from "./utils/constants";
+
 function App() {
   //Maping of Array (List Rendering)
   // const arr = ["One", "Two", "Three"];
@@ -15,6 +19,8 @@ function App() {
   //Conditional Rendering
   // const obj = { name: "" };
   // const loader = false;
+
+  //console.log(constants)
 
   return (
     <>
@@ -38,6 +44,11 @@ function App() {
       {/* <div>
         <FcAbout />
         <FaAllergies />
+      </div> */}
+
+      {/* <div>
+        <h1>{SCHOOL_NAME}</h1>
+        <h1>{STUDENT}</h1>
       </div> */}
     </>
   );
