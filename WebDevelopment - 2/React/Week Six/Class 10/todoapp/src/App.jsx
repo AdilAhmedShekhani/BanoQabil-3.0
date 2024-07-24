@@ -4,6 +4,11 @@ function App() {
 
   //Maping of object (List Rendering)
   // const arr = [{ text: "One" }, { text: "Two" }, { text: "Three" }];
+
+  //Conditional Rendering
+  // const obj = { name: "" };
+  // const loader = false;
+
   return (
     <>
       {/* {arr} */}
@@ -20,7 +25,8 @@ function App() {
         ))}
       </ul> */}
 
-
+      {/* <h1>{obj.name || "Not Available"}</h1> */}
+      {/* {loader ? <h1>Loading</h1> : <h1>Welcome</h1>} */}
     </>
   );
 }
