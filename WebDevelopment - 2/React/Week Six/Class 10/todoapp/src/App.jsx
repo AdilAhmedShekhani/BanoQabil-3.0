@@ -9,6 +9,8 @@
 
 // import * as constants from "./utils/constants";
 
+// PROPS (Parents to Child Data Pass)
+//import { Button } from "./components/Button/Button";
 function App() {
   //Maping of Array (List Rendering)
   // const arr = ["One", "Two", "Three"];
@@ -50,6 +52,10 @@ function App() {
         <h1>{SCHOOL_NAME}</h1>
         <h1>{STUDENT}</h1>
       </div> */}
+
+      {/* <Button value="Submit" color="red" />
+      <Button value="Click" color="blue" />
+      <Button value="BQ"  /> */}
     </>
   );
 }
