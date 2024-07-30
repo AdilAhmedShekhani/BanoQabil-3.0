@@ -1,6 +1,12 @@
+import Links from "../components/NavLink/Navlink";
+
 function About() {
-    return <h1>About</h1>;
-  }
-  
-  export default About;
-  
+  return (
+    <div>
+      <h1>About</h1>
+      <Links />
+    </div>
+  );
+}
+
+export default About;
