@@ -1,0 +1,56 @@
+body {
+  margin: 0px;
+}
+
+.container {
+  width: 100%;
+  background-color: orange;
+  height: 100vh;
+  flex-wrap: wrap;
+  display: flex; /* Give this to Parent */
+
+  /* flex-direction: row-reverse; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+
+  /* This property use after flex wrap */
+  /* align-content: center; */
+
+  /* gap: 10px; */
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 2px solid black;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  border: 2px solid black;
+}
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  border: 2px solid black;
+}
+
+/* Mobile and other Screen Responsiveness */
+/* When Flex wrap active */
+
+@media only screen and (max-width: 425px) {
+  .box,
+  .box1,
+  .box2 {
+    width: 100%;
+  }
+}
