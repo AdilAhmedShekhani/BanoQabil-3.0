@@ -6,6 +6,7 @@ import { useState } from "react";
 function App() {
   const [name, setName] = useState("Adil");
   const [todos, setTodos] = useState(["Test1", "Test2"]);
+  const [value, steValue] = useState("");
   return (
     <>
       {/* <div>
@@ -35,8 +36,24 @@ function App() {
             <li key={i}>{v}</li>
           ))}
 
-<input type="text" />
-          <button onClick={() => setTodos([...todos, "Adil"])}>Add todo</button>
+          {/* Data Binding (OneWay) */}
+          {/* <h1>{value}</h1> */}
+
+          {/* TwoWay DataBinding */}
+
+          <input
+            type="text"
+            value={value}
+            onChange={(e) => steValue(e.target.value)}
+          />
+          <button
+            onClick={() => {
+              setTodos([...todos, value]);
+              steValue("");
+            }}
+          >
+            Add todo
+          </button>
         </ul>
       </div>
     </>
