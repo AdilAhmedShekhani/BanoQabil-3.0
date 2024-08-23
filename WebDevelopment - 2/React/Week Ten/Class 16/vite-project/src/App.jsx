@@ -6,10 +6,11 @@ import Child from "./components/Child/Child";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [show, setShow] = useState(false);
 
-  const getData = useCallback(()=>{
-    return ["one","two"]
-  },[])
+  const getData = useCallback(() => {
+    return ["one", "two"];
+  }, [show]);
 
   return (
     <>
@@ -24,6 +25,8 @@ function App() {
       >
         Decrease
       </button>
+      <br />
+      <button onClick={() => setShow(!show)}>{show ? "Hello" : "Hi"}</button>
     </>
   );
 }
