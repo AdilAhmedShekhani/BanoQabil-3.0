@@ -2,7 +2,8 @@
 
 import { memo } from "react";
 
-function Child() {
+function Child({getData}) {
+  console.log(getData())
   console.log("Child Render");
   return (
     <div>
