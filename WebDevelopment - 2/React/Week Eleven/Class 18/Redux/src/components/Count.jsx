@@ -1,4 +1,5 @@
 import React from "react";
+// Useselector hook for retrive(read) value;
 import { useSelector } from "react-redux";
 
 const Counter = () => {
