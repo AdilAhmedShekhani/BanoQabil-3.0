@@ -6,6 +6,7 @@ function Shop(props) {
       <h1> Shop Page</h1>
 
       <h2>{props.params.category}</h2>
+      <h2>{props.params.banoqabil}</h2>
     </div>
   );
 }
