@@ -28,4 +28,23 @@ localStorage.setItem("name", "Adil")
 
 localStorage.getItem("name")
 
+// Multiple data save in local storage
+
+function addName() {
+    var name = document.getElementById("name")
+    var storageData = localStorage.getItem("students")
+    storageData = JSON.parse(storageData)
+    console.log(storageData)
+    var student = {
+        name: name.value
+    }
+
+    storageData.push(student)
+
+    localStorage.setItem("students", JSON.stringify(storageData))
+
+}
+
+
+
 // Practice Login and Signup Page
